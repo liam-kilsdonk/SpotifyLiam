@@ -22,6 +22,7 @@ namespace SpotifyLiam
         private void button2_Click(object sender, EventArgs e)
         {
             //play
+            test();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -31,12 +32,17 @@ namespace SpotifyLiam
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
-            //de laad bar
+            //de laad bar yes
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            //picture box
         }
     }
 }
