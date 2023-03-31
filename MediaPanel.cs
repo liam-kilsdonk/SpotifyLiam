@@ -3,12 +3,13 @@ using System.Numerics;
 
 namespace SpotifyLiam
 {
-    public partial class Form1 : Form
+    public partial class MediaPanel : Form
     {
-        public Form1()
+        private SoundPlayer player;
+        public MediaPanel()
         {
             InitializeComponent();
-
+            player = new SoundPlayer("C:/Users/liamg/Music/playlist-spotifyapp/song.wav");
         }
 
         public static void test()
@@ -22,22 +23,22 @@ namespace SpotifyLiam
             player.Play();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnPause_Click(object sender, EventArgs e)
         {
             //pauze
             //player.Pause();
+            player.Stop();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             //play
-            test();
+            PlaySound("C:/Users/liamg/Music/playlist-spotifyapp/song.wav");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             //Replay
-            PlaySound("C:/Users/liamg/Music/playlist c#/minecraft.wav");
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
